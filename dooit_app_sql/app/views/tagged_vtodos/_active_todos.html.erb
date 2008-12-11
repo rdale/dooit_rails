@@ -1,0 +1,9 @@
+  <ol>
+      <% for @tag in @tags %>
+        <% next if @tag.active_total == 0 %>
+        <li class= "tag">
+            <%= show_link(@tag, @tag.show_bigger_than_zero( @tag.active_total, @tag )) %>
+        </li> 
+          <% end %>
+ </ol>
+

@@ -1,0 +1,46 @@
+<div class="fhover">
+<h4>Edit item</h4>
+<% form_for(@vtodo, :html => {:id => "item" }, :url => update_item_vtodo_url(@vtodo)) do |f| %>
+    <%= f.error_messages %>
+    <div class="item1">   
+        <%= f.label :summary %>
+        <div class="field">
+            <%= f.text_field :summary %>
+        </div>
+  </div>
+    <div class="item2">  
+        <%= f.label :tags %>
+        <div class="field">
+            <%= f.text_field :tag_list %>
+            <div class="info">  comma-separated </div>
+         </div>
+  </div>
+    <div class="item3">  
+      <%= f.label :notes %>
+        <div class="field">
+          <%= f.text_area :description, :cols => "30", :rows => "5" %>
+        </div>
+  </div>
+     <div class="bsubmit">
+  <div class="field">
+          
+     <%= submit_to_remote 'Update', 'Update',:html => {:id => "vtodo_submit" }, :url => update_item_vtodo_url(@vtodo), :update =>"div_#{@vtodo.id}".to_sym,  :method => :put  %>
+          
+  </div>
+     </div>
+      <div class="breset">
+    <div class="field">
+      <div class ="vtodo_reset">
+              <%= link_to_remote 'Cancel', :url => list_item_vtodo_url(@vtodo), :update =>"div_#{@vtodo.id}".to_sym,  :method => :get  %>
+      </div>
+          </div>
+  </div>
+  <div class="breset">
+        <div class="field">
+          <div class ="vtodo_reset">
+            <%= link_to 'Destroy', @vtodo, :method => :delete %>
+          </div>
+        </div>
+      </div>
+<% end %>
+</div>

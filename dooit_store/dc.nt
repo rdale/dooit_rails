@@ -1,0 +1,146 @@
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/elements/1.1/title> "The Dublin Core Element Set v1.1 namespace providing access to its content by means of an RDF Schema"@en-us .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/elements/1.1/publisher> "The Dublin Core Metadata Initiative"@en-us .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/elements/1.1/description> "The Dublin Core Element Set v1.1 namespace provides URIs for the Dublin Core Elements v1.1. Entries are declared using RDF Schema language to support RDF applications."@en-us .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/elements/1.1/language> "English"@en-us .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/terms/modified> "2002-05-22" .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/elements/1.1/source> <http://dublincore.org/documents/dces/> .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/elements/1.1/source> <http://dublincore.org/usage/decisions/> .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/terms/isReferencedBy> <http://www.dublincore.org/documents/2001/10/26/dcmi-namespace/> .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/terms/isRequiredBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/terms/isReferencedBy> <http://purl.org/dc/dcmitype/> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en-us .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#comment> "A name given to the resource."@en-us .
+<http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/elements/1.1/description> "Typically, a Title will be a name by which \n        the resource is formally known."@en-us .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#title-005> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en-us .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity primarily responsible for making \n        the resource."@en-us .
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1/description> "Examples of a Creator include a person, an\n        organization, or a service. Typically, the name\n        of a Creator should be used to indicate the entity."@en-us .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#creator-005> .
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en-us .
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/2000/01/rdf-schema#comment> "The topic of the resource."@en-us .
+<http://purl.org/dc/elements/1.1/subject> <http://purl.org/dc/elements/1.1/description> "Typically, the topic will be represented using\n        keywords, key phrases, or classification codes.\n        Recommended best practice is to use a controlled\n        vocabulary.  To describe the spatial or temporal \n        topic of the resource, use the Coverage element."@en-us .
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/subject> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/subject> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/subject> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/subject> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#subject-005> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#label> "Description"@en-us .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#comment> "An account of the resource."@en-us .
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/description> "Description may include but is not limited to:\n        an abstract, a table of contents, a graphical\n        representation, or a free-text account of\n        the resource."@en-us .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#description-005> .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2000/01/rdf-schema#label> "Publisher"@en-us .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity responsible for making the resource \n        available."@en-us .
+<http://purl.org/dc/elements/1.1/publisher> <http://purl.org/dc/elements/1.1/description> "Examples of a Publisher include a person, an\n        organization, or a service. Typically, the name of\n        a Publisher should be used to indicate the entity."@en-us .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/publisher> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/publisher> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/publisher> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/publisher> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#publisher-005> .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/2000/01/rdf-schema#label> "Contributor"@en-us .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity responsible for making\n        contributions to the resource."@en-us .
+<http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/elements/1.1/description> "Examples of a Contributor include a person,\n        an organization, or a service. Typically, the\n        name of a Contributor should be used to indicate\n        the entity."@en-us .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#contributor-005> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2000/01/rdf-schema#label> "Date"@en-us .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2000/01/rdf-schema#comment> "A point or period of time associated with an \n        event in the lifecycle of the resource."@en-us .
+<http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/elements/1.1/description> "Date may be used to express temporal information\n        at any level of granularity.  Recommended best \n        practice is to use an encoding scheme, such as \n        the W3CDTF profile of ISO 8601 [W3CDTF]."@en-us .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#date-005> .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/2000/01/rdf-schema#label> "Type"@en-us .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/2000/01/rdf-schema#comment> "The nature or genre of the resource."@en-us .
+<http://purl.org/dc/elements/1.1/type> <http://purl.org/dc/elements/1.1/description> "Recommended best practice is to use a controlled\n        vocabulary such as the DCMI Type Vocabulary\n        [DCMITYPE]. To describe the file format, physical\n        medium, or dimensions of the resource, use the\n        Format element."@en-us .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/type> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/type> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/type> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/type> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#type-005> .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2000/01/rdf-schema#label> "Format"@en-us .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2000/01/rdf-schema#comment> "The file format, physical medium, or dimensions\n        of the resource."@en-us .
+<http://purl.org/dc/elements/1.1/format> <http://purl.org/dc/elements/1.1/description> "Examples of dimensions include\n        size and duration. Recommended best practice is\n        to use a controlled vocabulary such as the list\n        of Internet Media Types [MIME]."@en-us .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/format> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/format> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/format> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/format> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#format-006> .
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en-us .
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An unambiguous reference to the resource within\n        a given context."@en-us .
+<http://purl.org/dc/elements/1.1/identifier> <http://purl.org/dc/elements/1.1/description> "Recommended best practice is to identify the\n        resource by means of a string conforming\n        to a formal identification system. "@en-us .
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/identifier> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/identifier> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/identifier> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/identifier> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#identifier-005> .
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/2000/01/rdf-schema#label> "Source"@en-us .
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/2000/01/rdf-schema#comment> "The resource from which the described \n        resource is derived."@en-us .
+<http://purl.org/dc/elements/1.1/source> <http://purl.org/dc/elements/1.1/description> "The described resource may be derived from the\n        related resource in whole or in part. Recommended\n        best practice is to identify the related resource\n        by means of a string conforming to a formal\n        identification system."@en-us .
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/source> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/source> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/source> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/source> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#source-005> .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/2000/01/rdf-schema#label> "Language"@en-us .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/2000/01/rdf-schema#comment> "A language of the resource."@en-us .
+<http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/elements/1.1/description> "Recommended best practice is to use a controlled\n        vocabulary such as RFC 3066 [RFC3066]."@en-us .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#language-006> .
+<http://purl.org/dc/elements/1.1/relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/relation> <http://www.w3.org/2000/01/rdf-schema#label> "Relation"@en-us .
+<http://purl.org/dc/elements/1.1/relation> <http://www.w3.org/2000/01/rdf-schema#comment> "A related resource."@en-us .
+<http://purl.org/dc/elements/1.1/relation> <http://purl.org/dc/elements/1.1/description> "Recommended best practice is to identify the\n        related resource by means of a string conforming\n        to a formal identification system. "@en-us .
+<http://purl.org/dc/elements/1.1/relation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/relation> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/relation> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/relation> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/relation> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#relation-005> .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/2000/01/rdf-schema#label> "Coverage"@en-us .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/2000/01/rdf-schema#comment> "The spatial or temporal topic of the resource, the\n        spatial applicability of the resource, or the \n        jurisdiction under which the resource is relevant."@en-us .
+<http://purl.org/dc/elements/1.1/coverage> <http://purl.org/dc/elements/1.1/description> "Spatial topic may be a named place or a location \n        specified by its geographic coordinates. Temporal\n        period may be a named period, date, or date\n        range. A jurisdiction may be a named administrative\n        entity or a geographic place to which the resource\n        applies. Recommended best practice is to use a \n        controlled vocabulary such as the Thesaurus of\n        Geographic Names [TGN].  Where appropriate, named \n        places or time periods can be used in preference\n        to numeric identifiers such as sets of coordinates\n        or date ranges."@en-us .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/coverage> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/coverage> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/coverage> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/coverage> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#coverage-005> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/2000/01/rdf-schema#label> "Rights"@en-us .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about rights held in and \n        over the resource."@en-us .
+<http://purl.org/dc/elements/1.1/rights> <http://purl.org/dc/elements/1.1/description> "Typically, rights information includes \n        a statement about various property rights \n        associated with the resource, including\n        intellectual property rights."@en-us .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/rights> <http://purl.org/dc/terms/issued> "1999-07-02" .
+<http://purl.org/dc/elements/1.1/rights> <http://purl.org/dc/terms/modified> "2006-12-04" .
+<http://purl.org/dc/elements/1.1/rights> <http://purl.org/dc/elements/1.1/type> <http://dublincore.org/usage/documents/principles/#element> .
+<http://purl.org/dc/elements/1.1/rights> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#rights-005> .

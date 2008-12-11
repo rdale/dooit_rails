@@ -1,0 +1,26 @@
+<div id = "nav">
+    <h1><%= @stat.subject.to_s %> to-dos<small>(<%= @vtodos.length  %>)</small></h1>
+    <a class="show-all" href="/vtodos/">show all</a>
+    <span class="help">  Double-click on an item to edit summary and tags. Drag to re-arrange. </span>
+    <div id ="pending_todos">
+      <%= render :partial=> "pending_todos" %>
+    </div><!--pending_todos-->
+    <br />
+    
+    <div id = "add-section" >
+      <%= render(:partial => "add_item") %>
+    <br />
+    </div><!--add_section-->
+  </div><!--nav-->
+  <div id = "content1">
+          <!-- new column to contains: active tags and completed -->
+           <h4>Active tags</h4>  
+    <div id = "tags">
+      <%= render :partial => "active_todos" %>
+    </div><!--tags-->
+    <br /><br />
+    <h4>Completed</h4>
+    <div id = "completed_todos">
+      <%= render :partial => "completed_todos" %>
+    </div><!--completed-->
+  </div><!--content-->

@@ -1,0 +1,27 @@
+<h1>Editing vtodo</h1>
+
+<% form_for(@vtodo) do |f| %>
+  <p>
+    <%= f.label :summary %><br />
+    <%= f.text_field :summary %>
+  </p>
+  <p>
+    <%= f.label :notes %><br />
+    <%= f.text_field :description %>
+  </p>
+  <!--insert tag-->
+  <p>
+  <%= f.label :tags %><br />
+  <%= f.text_field :tag_list %>
+  </p>
+  <p>
+  <%= f.label :status %><br />
+  <%= f.check_box(:status, {}, 'done', '') %> 
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @vtodo %> |
+<%= link_to 'Back', vtodos_path %>

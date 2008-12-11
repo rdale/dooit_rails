@@ -1,0 +1,20 @@
+<div id = "divc_<%= @vtodo_c.uuid %>">
+<li id = "itemc_<%= @countc %>"  ondblclick="
+  <%= remote_function(:update => "divc_#{@vtodo_c.uuid}".to_sym, :url =>  edit_item_completed_vtodo_url(@vtodo_c), :method => :get )%>">
+  <%= check_box(:vtodo_c, :status, {:class => "checkboxclass", :id => "checkc_#{@countc}" }, 'done', '')  %>
+  <% rdfa_ical_vtodo @vtodo_c.uri do %>
+    <%= rdfa_ical_summary @vtodo_c.summary %>
+    <div class="links">
+      <%   tags = @vtodo_c.tags %>
+      <%   tags = [tags] unless tags.kind_of?(Array) %>
+      <%=  tags.map {|tag| rdfa_dcel_subject(link_to(tag, tag_tagged_vtodos_url(tag))) }.join(', ') %>
+    </div>
+  <% end %>
+</li>
+</div>  
+<%= observe_field(  "checkc_#{@countc}".to_sym,
+                    :frequency => 0.1,
+                    :update => 'index_all',
+                    :url =>  uncheck_item_vtodo_url(@vtodo_c), :method => :get ) %>
+
+    

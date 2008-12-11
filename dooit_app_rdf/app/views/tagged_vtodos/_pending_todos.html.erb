@@ -1,0 +1,8 @@
+<ol id ="vtodolist">
+	<% @count = 1 %>
+	<% for @vtodo_a in @vtodo_as %>
+		<%= render(:partial => "list_item") %>
+	<% @count += 1 %>
+	<% end %>
+</ol>
+<%= sortable_element 'vtodolist', :tag => 'div' %>	

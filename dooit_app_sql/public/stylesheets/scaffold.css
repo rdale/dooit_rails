@@ -1,0 +1,377 @@
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* remove image frame */
+
+img {border: none;}
+
+/* styling for container */
+#container {
+	padding: 0.8em 1.0em;
+
+}
+/*styling for table */
+table#table td {
+	padding: 5px;
+}
+/*styling for add_section (+) button*/
+.button a, .button a:hover {
+	border: 1px solid #ccc;
+	padding: 1px 5px;
+	text-decoration: none;
+	margin: 2px;
+	background-color: #f9f9f9;
+	display: block;
+	float: left;
+}
+
+body {
+	font-family: Trebuchet MS, Verdana, Geneva, sans-serif;
+  	letter-spacing: -0.01em;
+	margin: 0px;
+	padding: 0px;
+	color:#666666;
+	/*font-size: 0.8em;*/
+	margin: 0;
+	padding: 0;
+	background: transparent url(../images/bg_body.gif) top center repeat-x;
+	color:#666666;
+	background-color: #fff;
+ }
+h1, h2, h3, h4, h5 {
+	font-weight:normal;
+	margin:0.1em 0 0.4em;
+
+}
+h1 {
+  	font-size: 1.6em;
+  	margin-bottom: 5px;
+} 
+
+a {
+	color: #69c;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #369;
+}
+#container
+{
+	margin: 0.5em 3%;
+}
+#banner 
+{
+	margin: 0;
+	padding: .5em;
+	padding: 0.5em .5em .5em 0.5em;
+	height: 100px;
+}
+.help {
+	display:block;
+	font-size:0.85em;
+	padding:2px 0 0 10px;
+}
+a.show-all {
+	float:right;
+}
+#nav
+{
+	float: left;
+	width: 572px;
+	margin-left: 20px;
+	padding-top: 0;
+}
+#nav p 
+{
+	margin-top: 0;
+}
+#content1 
+{
+	padding-top: 0;
+	padding-left: 1em;
+	margin: 0 2em 0 600px;
+	border-left: 1px solid #EEEEEE;
+}
+#footer {
+	clear: both;
+	border-top: 1px dotted #EEEEEE;
+	padding: 1em;
+	text-align: center;
+	margin-top: 18em;
+	color: #BBBBBB;
+}
+/*list elements*/
+
+#pending_todos {
+	
+	padding: 1px 0;
+	line-height: 1.3em;
+	font-size: 15px;
+	color: #666666;
+	font-family: Trebuchet MS,Verdana, Geneva, sans-serif;
+	letter-spacing: 0.01em;
+	
+}
+#pending_todos ol 
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+#pending_todos ol li {
+	height: 43px;
+	border: 1px solid #F0F0F0;
+	margin: 3px;
+	background: #fff url(/images/bg_item.png) bottom center repeat-x;
+ 	padding: 2px 2px;
+  	margin-bottom: 5px;
+	clear: both;
+	display: block;
+	
+}
+
+#pending_todos ol li a{
+     	font-size: 13px;
+	margin-left:5px;
+
+}
+#pending_todos ol li:hover
+    
+    {
+       border: 1px solid #ccddee;
+    }
+.drag-handle {
+	background:transparent url(/images/drag_handle.png) repeat scroll left top;
+	float:left;
+	height:30px;
+	margin:2px;
+	width:10px;
+}
+.drag-handle {
+	cursor:move;
+}
+.links {
+
+	margin-left: 6%;
+}
+/*check box */
+
+.checkboxclass {
+	float:left;
+	width:20px;
+}
+/*list of completed tags */
+#completed_todos ol li
+{
+	height: 50px;
+	border: 1px solid #F0F0F0;
+	margin: 3px;
+	font-size: 15px;
+}
+#completed_todos ol 
+{
+	padding: 0px;
+	list-style-type: none;
+
+}
+#completed_todos ol li a {
+	font-size:0.8em;
+}
+/* tags */
+
+#tags {
+	font-size: 15px;
+}
+
+#tags ol {
+	  list-style-type: none;
+	  background-color: #fafafa;
+	  padding: 0px;
+	  font-size: 0.9em;
+	  max-height: 300px;
+	  overflow: auto;
+}
+
+#tags .tag {
+	  padding: 1px 2px;
+	  border: 1px solid #fff;
+}
+
+#tags .tag a {
+	  padding: 1px 0px 2px 5px;
+	  display: block;
+	  text-decoration: none;
+}
+
+#tags .tag a:hover {
+  	font-weight: bold;
+}
+#tags .tag.selected {
+  font-weight: bold;
+}
+/*partial for adding new item */
+h4 {
+	font-size: 1.1em;
+}
+#item {
+	border:2px solid #F6F6F6;
+	padding:5px;
+	height: 250px;
+}
+form {
+	font-size:14px;
+	margin:0;
+}
+form .item1, form .item2, form .item3 {
+	background-color:#F9F9F9;
+	border:1px solid #EEEEEE;
+	margin:0 2px 4px;
+	padding:5px 10px;
+}
+form .item1 {
+	height: 25px;
+}
+form .item2 {
+	height: 40px;
+}
+form .item3 {
+	height: 110px;
+}
+form .item1 label{
+	float:left;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	padding-right:5px;
+	text-align:right;
+	width:30%;
+}
+form .item2 label{
+	float:left;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	padding-right:5px;
+	text-align:right;
+	width:30%;
+}
+form .item3 label{
+	float:left;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	padding-right:5px;
+	text-align:right;
+	width:30%;
+}
+form .item1 .field, form .item2 .field, form .item3 .field {
+	float:left;
+	width:65%;
+}
+
+#vtodo_summary, #vtodo_tags, #vtodo_notes, #vtodo_description, #vtodo_tag_list {
+	background:#FFFFFF url(/images/bg_form_text_item.gif) repeat-x scroll left top;
+	border:1px solid #DDDDDD;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:14px;
+	padding:2px;
+	width:98%;
+}
+form .item2 .info {
+	color:#999999;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	line-height:13px;
+	padding:2px;
+}
+.fhover:hover {
+     border: 1px solid #ccddee;
+      color: #333;
+}
+.fhover {
+     padding: 2px 4px;
+      border:1px solid #EEEEEE;
+}
+
+/*buttons*/
+form .breset, form .bsubmit {
+	background-color:transparent;
+	border:medium none;
+	float:left;
+	padding:0;
+	margin:2px 4px;
+}
+form .breset .field, form .bsubmit .field {
+	width:auto;
+	float:left;
+}
+form .bsubmit #vtodo_submit, form .breset .vtodo_reset, form .breset .vtodo_reset2  {
+	background:#FFFFFF url(/images/bg_form_button.gif) repeat-x scroll left center;
+	border:1px solid #DDDDDD;
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	padding:2px 4px;
+}
+form .breset .vtodo_reset a, form .breset .vtodo_reset2 a{
+	text-decoration: none;
+	color: #666666;
+	cursor: default;
+}
+
+form .breset .vtodo_reset  {
+	height: 17px;
+	padding: 1px 4px 3px 4px;
+}
+form .breset .vtodo_reset2  {
+	height: 17px;
+	padding: 3px 4px 1px 4px;
+}
+form .breset .vtodo_reset:hover, form .bsubmit #vtodo_submit:hover, form .breset .vtodo_reset2:hover
+    
+    {
+      border: 1px solid #aaa;
+      color: #333;
+    }

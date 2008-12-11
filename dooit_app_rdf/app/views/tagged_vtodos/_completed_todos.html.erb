@@ -1,0 +1,9 @@
+<ol>
+	<% @countc = 1 %>
+	<% for @vtodo_c in @vtodo_cs %>
+		
+		<%= render(:partial => "list_item_completed") %>
+		
+	<% @countc += 1 %>
+	<% end %>
+</ol>

@@ -1,0 +1,5 @@
+adapter: postgresql
+database: dooit
+username: rdale
+password: admin
+host: localhost

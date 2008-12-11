@@ -1,0 +1,10 @@
+  <ol>
+      <% for tag in @tags %>
+        <% active_total = active_total_for_tag(tag) %>
+        <% next if active_total == 0 %>
+        <li class= "tag">
+            <%= show_link(tag, "%s (%d)" % [tag, active_total]) %>
+        </li> 
+          <% end %>
+ </ol>
+

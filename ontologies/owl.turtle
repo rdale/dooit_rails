@@ -1,0 +1,256 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.w3.org/2002/07/owl>
+    a :Ontology ;
+    rdfs:comment """This file specifies in RDF Schema format the
+    built-in classes and properties that together form the basis of
+    the RDF/XML syntax of OWL Full, OWL DL and OWL Lite.
+    We do not expect people to import this file
+    explicitly into their ontology. People that do import this file
+    should expect their ontology to be an OWL Full ontology. 
+  """ ;
+    rdfs:isDefinedBy <http://www.w3.org/TR/2004/REC-owl-features-20040210/>, <http://www.w3.org/TR/2004/REC-owl-semantics-20040210/>, <http://www.w3.org/TR/2004/REC-owl-test-20040210/> ;
+    :imports <http://www.w3.org/2000/01/rdf-schema> ;
+    :priorVersion <http://www.daml.org/2001/03/daml+oil> ;
+    :versionInfo "10 February 2004, revised $Date: 2004/09/24 18:12:02 $" .
+
+:Class
+    a rdfs:Class ;
+    rdfs:label "Class" ;
+    rdfs:subClassOf rdfs:Class .
+
+:Thing
+    a :Class ;
+    rdfs:label "Thing" ;
+    :unionOf [
+        rdf:first :Nothing ;
+        rdf:rest [
+            rdf:first [
+                a :Class ;
+                :complementOf :Nothing
+            ] ;
+            rdf:rest rdf:nil
+        ]
+    ] .
+
+:Nothing
+    a :Class ;
+    rdfs:label "Nothing" ;
+    :complementOf :Thing .
+
+:equivalentClass
+    a rdf:Property ;
+    rdfs:domain :Class ;
+    rdfs:label "equivalentClass" ;
+    rdfs:range :Class ;
+    rdfs:subPropertyOf rdfs:subClassOf .
+
+:disjointWith
+    a rdf:Property ;
+    rdfs:domain :Class ;
+    rdfs:label "disjointWith" ;
+    rdfs:range :Class .
+
+:equivalentProperty
+    a rdf:Property ;
+    rdfs:label "equivalentProperty" ;
+    rdfs:subPropertyOf rdfs:subPropertyOf .
+
+:sameAs
+    a rdf:Property ;
+    rdfs:domain :Thing ;
+    rdfs:label "sameAs" ;
+    rdfs:range :Thing .
+
+:differentFrom
+    a rdf:Property ;
+    rdfs:domain :Thing ;
+    rdfs:label "differentFrom" ;
+    rdfs:range :Thing .
+
+:AllDifferent
+    a rdfs:Class ;
+    rdfs:label "AllDifferent" .
+
+:distinctMembers
+    a rdf:Property ;
+    rdfs:domain :AllDifferent ;
+    rdfs:label "distinctMembers" ;
+    rdfs:range rdf:List .
+
+:unionOf
+    a rdf:Property ;
+    rdfs:domain :Class ;
+    rdfs:label "unionOf" ;
+    rdfs:range rdf:List .
+
+:intersectionOf
+    a rdf:Property ;
+    rdfs:domain :Class ;
+    rdfs:label "intersectionOf" ;
+    rdfs:range rdf:List .
+
+:complementOf
+    a rdf:Property ;
+    rdfs:domain :Class ;
+    rdfs:label "complementOf" ;
+    rdfs:range :Class .
+
+:oneOf
+    a rdf:Property ;
+    rdfs:domain rdfs:Class ;
+    rdfs:label "oneOf" ;
+    rdfs:range rdf:List .
+
+:Restriction
+    a rdfs:Class ;
+    rdfs:label "Restriction" ;
+    rdfs:subClassOf :Class .
+
+:onProperty
+    a rdf:Property ;
+    rdfs:domain :Restriction ;
+    rdfs:label "onProperty" ;
+    rdfs:range rdf:Property .
+
+:allValuesFrom
+    a rdf:Property ;
+    rdfs:domain :Restriction ;
+    rdfs:label "allValuesFrom" ;
+    rdfs:range rdfs:Class .
+
+:hasValue
+    a rdf:Property ;
+    rdfs:domain :Restriction ;
+    rdfs:label "hasValue" .
+
+:someValuesFrom
+    a rdf:Property ;
+    rdfs:domain :Restriction ;
+    rdfs:label "someValuesFrom" ;
+    rdfs:range rdfs:Class .
+
+:minCardinality
+    a rdf:Property ;
+    rdfs:domain :Restriction ;
+    rdfs:label "minCardinality" ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+:maxCardinality
+    a rdf:Property ;
+    rdfs:domain :Restriction ;
+    rdfs:label "maxCardinality" ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+:cardinality
+    a rdf:Property ;
+    rdfs:domain :Restriction ;
+    rdfs:label "cardinality" ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+:ObjectProperty
+    a rdfs:Class ;
+    rdfs:label "ObjectProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+:DatatypeProperty
+    a rdfs:Class ;
+    rdfs:label "DatatypeProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+:inverseOf
+    a rdf:Property ;
+    rdfs:domain :ObjectProperty ;
+    rdfs:label "inverseOf" ;
+    rdfs:range :ObjectProperty .
+
+:TransitiveProperty
+    a rdfs:Class ;
+    rdfs:label "TransitiveProperty" ;
+    rdfs:subClassOf :ObjectProperty .
+
+:SymmetricProperty
+    a rdfs:Class ;
+    rdfs:label "SymmetricProperty" ;
+    rdfs:subClassOf :ObjectProperty .
+
+:FunctionalProperty
+    a rdfs:Class ;
+    rdfs:label "FunctionalProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+:InverseFunctionalProperty
+    a rdfs:Class ;
+    rdfs:label "InverseFunctionalProperty" ;
+    rdfs:subClassOf :ObjectProperty .
+
+:AnnotationProperty
+    a rdfs:Class ;
+    rdfs:label "AnnotationProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+rdfs:label
+    a :AnnotationProperty .
+
+rdfs:comment
+    a :AnnotationProperty .
+
+rdfs:seeAlso
+    a :AnnotationProperty .
+
+rdfs:isDefinedBy
+    a :AnnotationProperty .
+
+:Ontology
+    a rdfs:Class ;
+    rdfs:label "Ontology" .
+
+:OntologyProperty
+    a rdfs:Class ;
+    rdfs:label "OntologyProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+:imports
+    a rdf:Property, :OntologyProperty ;
+    rdfs:domain :Ontology ;
+    rdfs:label "imports" ;
+    rdfs:range :Ontology .
+
+:versionInfo
+    a rdf:Property, :AnnotationProperty ;
+    rdfs:label "versionInfo" .
+
+:priorVersion
+    a rdf:Property, :OntologyProperty ;
+    rdfs:domain :Ontology ;
+    rdfs:label "priorVersion" ;
+    rdfs:range :Ontology .
+
+:backwardCompatibleWith
+    a rdf:Property, :OntologyProperty ;
+    rdfs:domain :Ontology ;
+    rdfs:label "backwardCompatibleWith" ;
+    rdfs:range :Ontology .
+
+:incompatibleWith
+    a rdf:Property, :OntologyProperty ;
+    rdfs:domain :Ontology ;
+    rdfs:label "incompatibleWith" ;
+    rdfs:range :Ontology .
+
+:DeprecatedClass
+    a rdfs:Class ;
+    rdfs:label "DeprecatedClass" ;
+    rdfs:subClassOf rdfs:Class .
+
+:DeprecatedProperty
+    a rdfs:Class ;
+    rdfs:label "DeprecatedProperty" ;
+    rdfs:subClassOf rdf:Property .
+
+:DataRange
+    a rdfs:Class ;
+    rdfs:label "DataRange" .
+

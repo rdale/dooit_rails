@@ -1,0 +1,38 @@
+<div class="fhover">
+<h4>Create a new item</h4>
+  <%# form_for(@vtodo, :html => {:id => "item" }) do |f| %>
+  <% form_for(@vtodo, :html => {:id => "item" }, :url => create_item_vtodo_url(0)) do |f| %>
+          <%= f.error_messages %>
+      <div class="item1">   
+         <%= f.label :summary %>
+        <div class="field">
+           <%= f.text_field :summary %>
+        </div>
+      </div>
+           <div class="item2"> 
+            <%= f.label :tags %>
+        <div class="field">
+              <%= f.text_field :tags %>
+                 <div class="info">  comma-separated </div>
+        </div>
+      </div>
+       <div class="item3"> 
+              <%= f.label :notes %>
+        <div class="field">
+                <%= f.text_area :description, :cols => "30", :rows => "5"%>
+        </div>
+      </div>
+      <div class="bsubmit">
+        <div class="field">
+                <%= submit_to_remote 'Create', 'Create', :html => {:id => "vtodo_submit" }, :url => create_item_vtodo_url(0), :update =>'index_all',  :method => :post  %>
+            </div>
+      </div>
+      <div class="breset">
+        <div class="field">
+          <div class ="vtodo_reset2">
+                <%= link_to_remote 'Cancel', :url => add_item_vtodo_url(0), :update => 'add-section',  :method => :get  %></div>
+        </div>
+      </div>
+        <% end %>
+  <br />
+</div>

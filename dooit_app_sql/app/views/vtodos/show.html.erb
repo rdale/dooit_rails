@@ -1,0 +1,15 @@
+<p>
+  <b>Summary:</b>
+  <%=h @vtodo.summary %>
+</p>
+
+<p>
+  <b>Subject:</b>
+  <%=h @vtodo.description %>
+</p>
+<p>
+  <b>Tags:</b>
+  <%= show_tags(@vtodo) %> 
+</p>
+<%= link_to 'Edit', edit_vtodo_path(@vtodo) %> |
+<%= link_to 'Back', vtodos_path %>

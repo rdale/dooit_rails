@@ -1,0 +1,39 @@
+<div id="container">
+	<div id = "upper_logo">
+		<a href = "/vtodos/"><img src = "/images/logo.png" /></a>
+	</div><!--upper_logo-->
+	<br />
+	<br />
+	<h1>all todos (<%= @vtodos.length  %>)</h1>
+
+	<table id ="table" cellspacing="1">
+	  <tr>
+	    <th>Todo summary</th>
+	    <th>Todo notes</th>
+		
+			
+	    <th>Todo tags</th>
+		
+	  </tr>
+
+	<% for vtodo in @vtodos %>
+	
+	  <tr>
+	    <td><%=h vtodo.summary %></td>
+	    <td><%=h vtodo.description %></td>
+	    <td>
+		<%= show_tags(vtodo) %>
+	    </td>
+	    <td><%= link_to 'Show', vtodo %></td>
+	    <td><%= link_to 'Edit', edit_vtodo_path(vtodo) %></td>
+	    <td><%= link_to 'Destroy', vtodo, :confirm => 'Are you sure?', :method => :delete %></td>
+	  </tr>
+	 
+	<% end %>
+	</table>
+
+	<br />
+	<div id = "add-section">
+		<%= link_to '+', new_vtodo_path, :class => 'button'  %>
+	</div><!--add_section-->
+</div><!--container-->

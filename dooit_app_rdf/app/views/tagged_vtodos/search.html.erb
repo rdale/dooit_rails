@@ -1,0 +1,30 @@
+<% if @results.length > 0 && @q != ''-%>
+  <table border=1 cellpadding=3px cellspacing=0px>
+    <tr>
+      <td align=center>
+        <b>Reference</b>
+      </td>
+      <td align=center>
+        <b>Passage</b>
+      </td>
+    </tr>
+
+    <% for result in @results %>
+    <tr>
+      <td align=center>
+        <%= result.book -%><br>
+        <%= result.chapter -%>:<%= result.verse -%>
+      </td>
+      <td>
+        <%= result.passage.gsub(/(#{@q})/i, '<b>\1</b>') -%>
+      </td>
+    </tr>
+  </table>
+<% end %>
+
+<% else -%>
+  <% if @q != '' -%>
+    Sorry, there are no results for:
+    <br> <b><%=h @q -%>
+  <% end -%>
+<% end -%>

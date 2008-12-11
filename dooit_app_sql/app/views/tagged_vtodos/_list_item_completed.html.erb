@@ -1,0 +1,18 @@
+<div id = "divc_<%= @vtodo_c.id %>">
+<li id = "itemc_<%= @countc %>"  ondblclick="
+<%= remote_function(:update => "divc_#{@vtodo_c.id}".to_sym,
+:url =>  edit_item_completed_tag_tagged_vtodo_url(@stat, @vtodo_c), :method => :get
+)%>">
+   
+  <%= check_box( :vtodo_c, :status, {:class => "checkboxclass", :id => "checkc_#{@countc}" }, 'done', '')  %>
+  <%=h @vtodo_c.summary %><br />
+  <div class="links"><%= show_tags_as_links(@vtodo_c) %>    
+  </div>    
+</li>
+</div>  
+<%= observe_field "checkc_#{@countc}".to_sym,
+ :frequency => 0.1,
+ :update => 'index_all',
+:url =>  uncheck_item_tag_tagged_vtodo_url(@stat, @vtodo_c), :method => :get %>
+
+    
